@@ -1,0 +1,27 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: less-loader
+    versions:
+    - 5.0.0
+    - 8.0.0
+    - 8.1.0
+  - dependency-name: chai
+    versions:
+    - 4.2.0
+    - 4.3.0
+    - 4.3.3
+  - dependency-name: webpack-bundle-analyzer
+    versions:
+    - 4.4.0
+  - dependency-name: element-ui
+    versions:
+    - 2.15.0
+  - dependency-name: semver
+    versions:
+    - 7.3.4
